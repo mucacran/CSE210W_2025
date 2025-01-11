@@ -30,12 +30,14 @@ class Program
             }
             else if (calificacion >= 70)
             {
-                Console.WriteLine($"Su Calificación para {calificacion}  es: B");
+                Console.WriteLine($"Su Calificación para {calificacion}  es: C");
             }
             else if (calificacion >= 60)
             {
-                Console.WriteLine($"Su Calificación para {calificacion}  es: B");
-            }else{
+                Console.WriteLine($"Su Calificación para {calificacion}  es: D");
+            }
+            else
+            {
                 Console.WriteLine($"Su Calificación para {calificacion}  es: F");
             }
 
@@ -43,7 +45,7 @@ class Program
             bool valor = true;
             while (valor)
             {
-                Console.Write("Quieres seguir ingresando notas elige entre el uno o el cero: si = 1, no = 0: ");
+                Console.Write("Quieres seguir ingresando notas elige entre el uno o el cero:\nsi = 1\nno = 0\n\nSu elección es: ");
                 int elecion;
                 if (int.TryParse(Console.ReadLine(), out elecion) && (elecion == 1 || elecion == 0))
                 {
