@@ -27,7 +27,7 @@ class Program
 
             }
             numero = numb;
-            if (numero != 0) // Evita agregar el 0 a la lista
+            if (numero != 0) // Avoid adding 0 to the list
             {
                 numbers.Add(numero);
             }
@@ -38,7 +38,7 @@ class Program
         Console.WriteLine("The average is: " + ((double)numbers.Sum()/numbers.Count));
         Console.WriteLine("The largest number is: " + numbers.Max());
 
-        // Número positivo más pequeño
+        // Smallest positive number
         if (numbers.Any(n => n > 0)) {
             int menorPositivo = numbers.Where(n => n > 0).Min();
             Console.WriteLine("The smallest positive number is: " + menorPositivo);
@@ -46,7 +46,7 @@ class Program
             Console.WriteLine("No positive numbers were entered.");
         }
 
-        // Lista ordenada
+        // Ordered list
         numbers.Sort();
         Console.WriteLine("The sorted list is: ");
         foreach (int num in numbers)
