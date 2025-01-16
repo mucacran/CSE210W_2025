@@ -14,6 +14,7 @@ class Program
             bool esNumeroValido = false;
             bool again = true;
 
+            // count the attempts
             int track = 0;
 
             while (!esNumeroValido || nNumero != numero)
@@ -42,10 +43,10 @@ class Program
             Console.WriteLine("track: " + track);
 
 
-
+            // Small loop to ask if you want to continue playing
             while(again){
                 Console.Write("Do you want to play again? ");
-                yes = Console.ReadLine()?.ToLower(); // Maneja la entrada nula y convierte a minúsculas.
+                yes = Console.ReadLine()?.ToLower(); // Handles null input and converts to lowercase.
                 if(yes == "no" || yes == "yes"){
                     again = false;
                 }else{
