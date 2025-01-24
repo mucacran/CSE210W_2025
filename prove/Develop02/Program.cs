@@ -1,3 +1,7 @@
+//Make sure to describe anything you have done to exceed the requirements in comments in the Program.cs file.
+// Create 6 menu items, where 3 is the one that deletes an entry.
+// You can create a file to save the entries and load them.
+
 using System;
 
 class Program
