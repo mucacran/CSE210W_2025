@@ -32,9 +32,9 @@ class Journal
         {
             foreach (Entry entry in _entries)
             {
-                string prompt = entry._Prompt;
-                string text = entry._Text;
-                string date = entry._Date.ToShortDateString();
+                string prompt = entry._prompt;
+                string text = entry._text;
+                string date = entry._date.ToShortDateString();
 
                 //writer.WriteLine(entry.GetDetails());
                 writer.WriteLine($"{date}~~{prompt}~~{text}");
@@ -54,9 +54,9 @@ class Journal
                 string[] part = line.Split("~~");
                 Entry newEntry = new Entry();
 
-                newEntry._Date = DateTime.Parse(part[0]);
-                newEntry._Prompt = part[1];
-                newEntry._Text = part[2];
+                newEntry._date = DateTime.Parse(part[0]);
+                newEntry._prompt = part[1];
+                newEntry._text = part[2];
 
                 _entries.Add(newEntry);
             }

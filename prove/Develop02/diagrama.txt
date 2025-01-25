@@ -1,0 +1,41 @@
+class Program {
+  + Main(string[] args) : void
+}
+
+@startuml
+
+class Journal {
+ -_entries: List<Entry>
+
+ + Journal()
+ + AddEntry(Entry newEntry) : void
+ + DisplayEntries() : void
+ + SaveEntries() : void
+ + LoadEntries() : void
+ + RemoveEntry(int index):void
+}
+
+@enduml
+
+
+@startuml
+class PromptGenerator{
+ - _prompts : List<string>
+ + GetRandomPrompt() : string
+}
+@enduml
+
+@startuml
+ class Entry{
+  + _prompt : string
+  + _text : string
+  + _date : DateTime
+
+  + Entry(string prompt, string text)
+  + GetDetails() : string
+ }
+
+Program -> Entry: "Use"
+Program --> Journal : "Use"
+Program --> PromptGenerator : "Use"
+@enduml

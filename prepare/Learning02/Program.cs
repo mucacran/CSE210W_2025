@@ -16,7 +16,6 @@ class Program
         job2._startYear = 2022;
         job2.endYear = 2023;
 
-
         //job1.Displays();
         //job2.Displays();
 
