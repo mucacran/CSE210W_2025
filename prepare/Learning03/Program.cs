@@ -6,14 +6,21 @@ class Program
     {
         Console.WriteLine("Hello Learning03 World!");
 
+        var f1 = new Fraction();
+        Console.WriteLine(f1.getFractionString());
+        Console.WriteLine(f1.getDecimalValue());
 
+        var f2 = new Fraction(5);
+        Console.WriteLine(f2.getFractionString());
+        Console.WriteLine(f2.getDecimalValue());
 
-        var Fraction1 = new Fraction();
-        var Fraction2 = new Fraction(6);
-        var Fraction3 = new Fraction(6,7);
+        var f3 = new Fraction(3, 4);
+        Console.WriteLine(f3.getFractionString());
+        Console.WriteLine(f3.getDecimalValue());
 
-        Fraction2.publicar();
-        
+        var f4 = new Fraction(1, 3);
+        Console.WriteLine(f4.getFractionString());
+        Console.WriteLine(f4.getDecimalValue());
     }
 
 
