@@ -1,0 +1,3 @@
+0
+1
+SimpleGoal:stydy scripture,todas las mañanas,50,False
