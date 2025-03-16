@@ -1,0 +1,6 @@
+850
+2
+SimpleGoal:Give a talk,hablar en la sacramental,100,True
+EternalGoal:Estudiar las escrituras,Estudiar por las mañanas 10 minutos,50
+ChecklistGoal:Ir al templo Asistir y realizar cualquier ordenanzas,Asistir y realizar cualquier ordenanzas,50,3,500,3
+ChecklistGoal:Weke up early wake up by at least 6:00am,Weke up early wake up by at least 6:00am,10,10,1000,0

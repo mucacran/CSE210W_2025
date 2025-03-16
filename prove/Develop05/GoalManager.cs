@@ -6,6 +6,14 @@ using System.IO;
 public class GoalManager
 {
     private List<Goal> _goals;
+
+        // añadir lista de SimpleGoal: SimpleGoal
+    // añadir lista de EternalGoal: EternalGoal
+    // añadir lista de ChecklistGoal: ChecklistGoal
+    private List<SimpleGoal> _simpleGoals;
+    private List<EternalGoal> _eternalGoals;
+    private List<ChecklistGoal> _checklistGoals;
+
     private int _totalPoints;
     private int _level;
 
@@ -23,7 +31,7 @@ public class GoalManager
 
     public void DisplayGoals()
     {
-        Console.WriteLine("Your Goals:");
+        Console.WriteLine("The goals are:");
         if (_goals.Count == 0)
         {
             Console.WriteLine("No goals to display.");
@@ -37,8 +45,9 @@ public class GoalManager
                 i++;
             }
         }
-        Console.WriteLine($"Total Points: {_totalPoints}");
-        Console.WriteLine($"Level: {_level}");
+        
+        //Console.WriteLine($"Total Points: {_totalPoints}");
+        //Console.WriteLine($"Level: {_level}");
     }
 
     public void RecordEventOnGoal(int goalIndex)
@@ -54,7 +63,8 @@ public class GoalManager
         if (earned > 0)
         {
             _totalPoints += earned;
-            Console.WriteLine($"Congratulations! You earned {earned} points.");
+            Console.WriteLine($"Congratulations! You have earned {earned} points!");
+            Console.WriteLine($"You now have {_totalPoints} points.");
             LevelUpCheck();
 
             // Check if ChecklistGoal just completed

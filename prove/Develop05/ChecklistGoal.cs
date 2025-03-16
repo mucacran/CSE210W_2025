@@ -36,7 +36,7 @@ public class ChecklistGoal : Goal
     public override string GetStatus()
     {
         string check = IsComplete() ? "[X]" : "[ ]";
-        return $"{check} {_name} ({_description}) -- Completed {_timesCompleted}/{_targetCount}";
+        return $"{check} {_name} ({_description}) -- Currently completed: {_timesCompleted}/{_targetCount}";
     }
 
     public override string ToCSV()
