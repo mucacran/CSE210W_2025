@@ -92,15 +92,20 @@ public class Program
 
         Goal newGoal = null;
 
+
         switch (typeChoice)
         {
             case "1":
                 // Simple Goal
                 newGoal = new SimpleGoal(name, description, points);
+                //_simpleGoals.Add((SimpleGoal)newGoal);
+                //añadir a la lista de SimpleGoal
+                manager.AddSimpleGoal((SimpleGoal)newGoal);
                 break;
             case "2":
                 // Eternal Goal
                 newGoal = new EternalGoal(name, description, points);
+                _eternalGoals.Add((EternalGoal)newGoal);
                 break;
             case "3":
                 // Checklist Goal
@@ -109,6 +114,7 @@ public class Program
                 Console.Write("What is the bonus for completing it that many times? ");
                 int bonusPoints = int.Parse(Console.ReadLine());
                 newGoal = new ChecklistGoal(name, description, points, targetCount, bonusPoints);
+                _checklistGoals.Add((ChecklistGoal)newGoal);
                 break;
             default:
                 Console.WriteLine("Invalid type choice. Goal not created.");

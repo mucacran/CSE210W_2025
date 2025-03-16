@@ -10,9 +10,9 @@ public class GoalManager
         // añadir lista de SimpleGoal: SimpleGoal
     // añadir lista de EternalGoal: EternalGoal
     // añadir lista de ChecklistGoal: ChecklistGoal
-    private List<SimpleGoal> _simpleGoals;
-    private List<EternalGoal> _eternalGoals;
-    private List<ChecklistGoal> _checklistGoals;
+    private List<SimpleGoal> _simpleGoals = new();
+    private List<EternalGoal> _eternalGoals = new();
+    private List<ChecklistGoal> _checklistGoals = new();
 
     private int _totalPoints;
     private int _level;
