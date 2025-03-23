@@ -2,3 +2,5 @@ change@mucacran.com,Boxeo
 change@mucacran.com,Zumba
 helenbravo@mucacran.com,Boxeo
 mucacran@mucacran.com,Yoga
+mucacran@gmail.com,Boxeo
+mucacran@gmail.com,Crosfit
