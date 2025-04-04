@@ -4,3 +4,4 @@ helenbravo@mucacran.com,Boxeo
 mucacran@mucacran.com,Yoga
 mucacran@gmail.com,Boxeo
 mucacran@gmail.com,Crosfit
+sergio@correo.com,Zumba
