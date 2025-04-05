@@ -65,6 +65,7 @@ class Program
             if (registerClass != null)
             {
                 registerClass.ejectRegister();
+                
             }
             
         }

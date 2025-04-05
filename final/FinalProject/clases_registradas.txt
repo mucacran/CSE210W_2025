@@ -5,3 +5,7 @@ mucacran@mucacran.com,Yoga
 mucacran@gmail.com,Boxeo
 mucacran@gmail.com,Crosfit
 sergio@correo.com,Zumba
+sergio@mucacran.com,Crosfit
+sergio@mucacran.com,Yoga
+sergio@mucacran.com,Karate
+sergio@mucacran.com,Boxeo

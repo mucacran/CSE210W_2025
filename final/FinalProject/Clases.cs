@@ -20,9 +20,6 @@ class Clases
     {
         Welcome();
         IfRegister();
-        //ElegirHorario();
-        //ElegirInstructor();
-        //saveRegister();
     }
 
     public void Welcome()
@@ -63,7 +60,6 @@ class Clases
         }
     }
 
-
     public string GetNombreClass()
     {
         return _nombreClass;
@@ -102,10 +98,18 @@ class Clases
             {
                 Console.WriteLine($"Welcome {parts[0].ToUpper()} {parts[1].ToUpper()}, you are registered to this class");
                 usuarioEncontrado = true;
+
+                ChooseSchedule();
+                ChooseInstructor();
+                showDetails();
+
                 GuardarClase(); // this saves the class to the user
                 return;
             }
         }
+
+
+
 
         if (!usuarioEncontrado)
         {
@@ -142,9 +146,22 @@ class Clases
         {
             writer.WriteLine($"{Correo},{GetNombreClass()}");
         }
+        Console.WriteLine("\nClass registered successfully.");
+        Console.WriteLine("Press enter to continue...");
 
-        Console.WriteLine("\nYour class registration has been successfully saved..");
     }
 
-
+    public virtual void ChooseInstructor()
+    {
+        Console.Clear();
+        Console.WriteLine("We're sorry\nWe will have the instructors later.");
+    }
+    public virtual void ChooseSchedule()
+    {
+        Console.WriteLine("We're sorry\nWe will have the schedules later.");
+    }
+    public virtual void showDetails()
+    {
+        Console.WriteLine("We're sorry\nWe'll email you later so you can log in and choose a time and instructor.");
+    }
 }
